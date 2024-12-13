@@ -1,0 +1,36 @@
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 30rem 2rem 5rem 2rem;
+}
+footer .footerlogo{
+     height: 5rem;
+}
+footer .footer-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+footer .footer-info a{
+  color: aliceblue;
+  font-size: 2.5rem;
+}
+footer .footer-contact .footer-socialmedia{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+footer .footer-contact .footer-socialmedia .foot{
+    background-color: aliceblue;
+   
+    border-radius: 30%;
+}
+

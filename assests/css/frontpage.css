@@ -238,8 +238,10 @@
     } */
     .top-content .top-content2  img{
         animation:none ;
-        width: 75vw;
-        transform: translateX(8rem) translateY(-2rem);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translateY(-2rem);
     }
 
     .top-content .top-content2 .text1{
@@ -292,7 +294,7 @@
     }
     .top-content .top-content2  img{
         animation:none ;
-        transform: translateX(5rem) translateY(-2rem);
+        transform: translateY(-2rem);
     }
 
     .top-content .top-content2 .text1{

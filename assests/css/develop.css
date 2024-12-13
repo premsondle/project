@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 8rem;
+    padding-left: 3rem;
     width: fit-content;
    
 }
@@ -41,8 +41,10 @@ padding-right: 10rem;
 .development .development-lowertext{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 5rem;
+    margin-right: 15rem;
+    /* gap: rem; */
 }
 .development .development-lowertext p{
     font-family: "Poppins", serif;
@@ -51,4 +53,45 @@ padding-right: 10rem;
     color: aliceblue;
     line-height: 9rem;
 }
-
+@media (max-width:1024px) {
+    .development .development-uppertext h1{
+        font-size: 5rem;
+        line-height: 5rem;
+        width: 70%;
+    }
+    .development .development-uppertext p{
+        font-size: 1.5rem;
+        width: 70%;
+        margin-top: 2rem;
+    padding-right: 10rem;
+    }
+    .development .development-lowertext{
+        line-height: 2rem;
+    }
+    .development .development-lowertext p{
+        font-size: 4rem;
+    }
+}
+@media (max-width:768px) {
+    .development .development-uppertext h1{
+        font-size: 4rem;
+        width: 90%;
+        line-height: 4rem;
+    }
+    .development .development-uppertext p{
+        font-size: 1rem;
+        width: 80%;
+        margin-top: 2rem;
+    padding-right: 10rem;
+    }
+    .development .development-lowertext p{
+        font-size: 3rem;
+        line-height: 4rem;
+        padding-left: 3rem;
+    }
+    .development .development-lowertext .dividerfooter{
+        width: 90%;
+        padding-left: 5rem;
+        margin-left: 3rem;
+    }
+}
