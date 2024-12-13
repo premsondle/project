@@ -1,123 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
-    <link rel="stylesheet" href="./assests/css/style.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="./assests/css/style.css" />
+  </head>
+  <body onload="loadingfunc()">
     <header>
-        <div class="navbar">
-            <img src="./assests/logo.png" alt="logo" >
-                <div class="navbar-links">
-                   <nav class="navbar-linkss">
-                       <li><a href="#">TeamGravitas</a></li>
-                       <li><a href="#">About</a></li>
-                       <li><a href="#">Features</a></li>
-                       <li><a href="#">Tech</a></li>
-                   </nav>
-                    <div class="navbar-contact">
+      <div class="navbar">
+        <img src="./assests/logo.png" alt="logo" />
+        <div class="navbar-links">
+          <nav class="navbar-linkss">
+            <li><a href="#">TeamGravitas</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Tech</a></li>
+          </nav>
+     
 
-                         <div class="navbar-contact1">
-                              <img src="./assests/contact/instalogo.png" alt="insta">
-                         </div>
-                         <div class="navbar-contact2">
-                              <img src="./assests/contact/twitterlogo.png" alt="twitter">
-                         </div>
-                         <div class="navbar-contact3">
-                              <img src="./assests/contact/linkedin.png" alt="linkedin">
-                         </div>
-                         <div class="navbar-contact4">
-                              <img src="./assests/contact/messager.png" alt="messager">
-                         </div>
-                    </div> 
-                    <div class="hamburgerblock">
-                        <label type="checkbox" for="checkboxx" class="hamburger">
-                          <div class="line top"></div>
-                          <div class="line bottom"></div>
-                        </label>
-                    </div>
+          <div class="navbar-contact">
+            <div class="navbar-contact1">
+              <img src="./assests/contact/instalogo.png" alt="insta" />
             </div>
+            <div class="navbar-contact2">
+              <img src="./assests/contact/twitterlogo.png" alt="twitter" />
+            </div>
+            <div class="navbar-contact3">
+              <img src="./assests/contact/linkedin.png" alt="linkedin" />
+            </div>
+            <div class="navbar-contact4">
+              <img src="./assests/contact/messager.png" alt="messager" />
+            </div>
+          </div>
+          <div class="hamburgerblock">
+            <input type="checkbox" name="check" id="checkbox" />
+            <label  for="checkbox"  class="hamburger">
+              <div class="line top"></div>
+              <div class="line bottom"></div>
+            </label>
+          </div>
         </div>
+      </div>
     </header>
-
+    <div class="number">100</div>
     <section class="top-content">
-        <div class="top-content1">
-            <h1>Communities</h1>
+      <div class="top-content1">
+        <h1>Communities</h1>  
 
-            <p>Gravitas is an innovative event management software designed to streamline the process of organizing and participating in events. Through Gravitas, users have easy access to a well-organized list of ongoing and upcoming events, allowing them to stay informed and plan accordingly.</p>
+        <p>
+          Gravitas is an innovative event management software designed to
+          streamline the process of organizing and participating in events.
+          Through Gravitas, users have easy access to a well-organized list of
+          ongoing and upcoming events, allowing them to stay informed and plan
+          accordingly.
+        </p>
 
-            <button class="know-more">
-                <p>Know More </p>
-                 <img src="./assests/topcontent/arrow.png" alt="arrow">
-            </button>
-        </div>
+        <button class="know-more">
+          <p>Know More</p>
+          <img src="./assests/topcontent/arrow.png" alt="arrow" />
+        </button>
+      </div>
 
-        <div class="top-content2">
-               
-                <img src="./assests/topcontent/Group 18.png" alt="lady">
-                <h1 class=" text1">Volunteer</h1>
-                <h1 class=" text2">Discover</h1>
-                <h1 class=" text3">Volunteer</h1>
-                <p class="text4">Public Sans Hello World !</p>
-           
-                <div class="top-content3">
-                    <h1>EVENTS</h1>
-                    <p>Enhace community bonding and support providing enhanced social engegement and interaction</p>
-                </div>
-        </div>
+      <div class="top-content2">
+        <img src="./assests/topcontent/Group 18.png" alt="lady" />
+        <h1 class="text1">Volunteer</h1>
+        <h1 class="text2">Discover</h1>
+        <h1 class="text3">Volunteer</h1>
+        <p class="text4">Public Sans Hello World !</p>
+
+      </div>
+
+      
+      <div class="top-content3 loading"  id="top-content3" >
+        <h1>EVENTS</h1>
+        <p>
+          Enhace community bonding and support providing enhanced social
+          engegement and interaction
+        </p>
+      </div>
     </section>
 
-    <hr class="divider1">
+    <hr class="divider1" />
 
     <section class="slide2">
+      <div class="slide2-wrapper">
         <div class="slide2-main">
-            <h1>Where Events Meet Innovation...</h1>
-            <p class="pera1">Unite ideas, forge connections, and transform every event into an unforgettable experience.</p>
-            <hr class="divider2">
-            <p class="pera2">Step into the future of event management with a platform designed to simplify collaboration, amplify discoverability, and foster meaningful connections. Whether you're planning a grand conference, an intimate gathering, or a dynamic networking event, our tools ensure every detail is seamless and every opportunity is maximized. From connecting with the right people to showcasing your event to a broader audience, we empower you to create experiences that inspire and engage.</p>
+          <h1>Where Events Meet Innovation...</h1>
+          <p class="pera1">
+            Unite ideas, forge connections, and transform every event into an
+            unforgettable experience.
+          </p>
+          <hr class="divider2" />
+          <p class="pera2">
+            Step into the future of event management with a platform designed to
+            simplify collaboration, amplify discoverability, and foster
+            meaningful connections. Whether you're planning a grand conference,
+            an intimate gathering, or a dynamic networking event, our tools
+            ensure every detail is seamless and every opportunity is maximized.
+            From connecting with the right people to showcasing your event to a
+            broader audience, we empower you to create experiences that inspire
+            and engage.
+          </p>
+        </div>
+      </div>
+
+      <div class="slide2-design">
+        <div class="rowdesign">
+          <div class="design"></div>
+          <div class="design"></div>
+          <div class="design"></div>
+          <div class="design"></div>
+          <div class="design"></div>
+          <div class="design"></div>
+          <div class="design"></div>
+          <div class="design"></div>
+          <div class="design"></div>
+          <div class="design"></div>
+          <div class="design"></div>
         </div>
 
-     <div class="slide2-design">
-             <div class="rowdesign">
-
-                <div class="design" ></div>
-                <div class="design" ></div>
-                <div class="design" ></div>
-                <div class="design" ></div>
-                <div class="design" ></div>
-                <div class="design" ></div>
-                <div class="design" ></div>
-                <div class="design" ></div>
-                <div class="design" ></div>
-                <div class="design" ></div>
-                <div class="design" ></div>
-
-            </div>
-
-             
-        
         <div class="cards">
-
-            <div class="card first">
-                <img src="./assests/cards/street.png" alt="street">
-                <h2>Discover Events</h2>
-                <p>Unite ideas, forge connections, and transform every event into an unforgettable experience.</p>
+          <div class="card">
+            <div class="img img1">
+              <div class="imgpart"></div>
+              <img src="./assests/cards/street.png" alt="street" />
             </div>
-            <div class="card second">
-                <img src="./assests/cards/hand.png" alt="hands">
-                <h2>Discover Events</h2>
-                <p>Unite ideas, forge connections, and transform every event into an unforgettable experience.</p>
+            <h2>Discover Events</h2>
+            <p>
+              Unite ideas, forge connections, and transform every event into an
+              unforgettable experience.
+            </p>
+          </div>
+          <div class="card">
+            <div class="img img2">
+              <div class="imgpart"></div>
+              <img src="./assests/cards/hand.png" alt="hands" />
             </div>
-            <div class="card third">
-                <img src="./assests/cards/peoples.png" alt=peoples">
-                <h2>Discover Events</h2>
-                <p>Unite ideas, forge connections, and transform every event into an unforgettable experience.</p>
+            <h2>Discover Events</h2>
+            <p>
+              Unite ideas, forge connections, and transform every event into an
+              unforgettable experience.
+            </p>
+          </div>
+          <div class="card">
+            <div class="img img3">
+              <img src="./assests/cards/peoples.png" alt=peoples">
+              <div class="imgpart"></div>
             </div>
+            <h2>Discover Events</h2>
+            <p>
+              Unite ideas, forge connections, and transform every event into an
+              unforgettable experience.
+            </p>
+          </div>
         </div>
-     </div>
+      </div>
     </section>
-</body>
+
+    <footer>
+      <div class="Copyright">
+        <p>Copyright2014 Gravitas. All rights reserved</p>
+        <a href="#Terms">Terms of Service Privacy</a>
+      </div>
+
+    
+    <div class="footer-contact">
+        <img src="./assests/contact/instalogo.png" alt="insta" />
+        <img src="./assests/contact/twitterlogo.png" alt="twitter" />
+      
+        <img src="./assests/contact/linkedin.png" alt="linkedin" />
+      
+        <img src="./assests/contact/messager.png" alt="messager" />
+      </div>
+    </div>
+    </footer>
+
+    <script src="./assests/js/script.js"></script>
+  </body>
 </html>

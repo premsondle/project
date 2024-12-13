@@ -15,8 +15,8 @@
 
 }
 .top-content .top-content1{
-    padding-top: 2rem;
-    padding-left: 2rem;
+    padding-top: 10rem;
+    padding-left: 4rem;
 
     width: 60vw;
 
@@ -93,6 +93,7 @@
     height: 100%;/* ask*/
     overflow: hidden;
     object-fit: contain;
+    animation: wordsanimation 30s ease-out 0s infinite alternate ;
 }
 /* .top-content .top-content2 h1{
     position: absolute;
@@ -104,6 +105,7 @@
     font-size: 7rem;
     top: 6.1rem;
     left: 1.4rem;
+ animation: wordsanimation 25s ease-in-out 0s infinite alternate-reverse ;
 }
 .top-content .top-content2 .text2{
     position: absolute;
@@ -112,6 +114,8 @@
     font-size: 8rem;
     right: 1.5rem;
     top: .1rem;
+    animation: wordsanimation 22s ease-out 0s infinite alternate ;
+
 }
 .top-content .top-content2 .text3{
     position: absolute;
@@ -120,25 +124,29 @@
     right: 6.5rem;
     top: 11.1rem;
     font-size: 5rem;
+    animation: wordsanimation 20s ease-out 0s infinite alternate ;
+
 }
 .top-content .top-content2 .text4{
     font-family:"Roboto", sans-serif;
     font-weight: 200;
     font-size: 1.3rem;
+    animation: wordsanimation 35s ease-out 0s infinite alternate ;
 
     position: absolute;
     right: 8.9rem;
     top: 18.1rem;
 }
 .top-content .top-content3{
-    width: 120%;
-    height: 50%;
+    width: 55%;
+    height: 35%;
     z-index: 20;
-    background: rgba(208, 208, 208, 0.645);
-     backdrop-filter: .4rem;
+    background: #d0d0d077;
+     backdrop-filter: blur(1rem);
     position: absolute;
     bottom: 6rem;
-    right: -4rem;
+    right: 0rem;
+    transition: 1s;
 
 }
 .top-content .top-content3 h1{
@@ -153,4 +161,244 @@
     width: 26vw;
     font-size: 1.3rem; 
     padding-left: 1rem;        
+}
+.top-content .loading{
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider1{
+    display: block;
+    justify-content: center;
+   
+    height: .25rem;
+    margin: 0rem 15rem;
+    background-color: black;
+}
+@keyframes wordsanimation{
+    0%{
+   transform: translateX(0) translateY(0) ;
+    }
+    50%{
+        transform: translateX(-7rem) translateY(.3rem) ;
+    }
+    100%{
+        transform: translateX(.5rem) translateY(0);
+    }
+}
+@media (max-width:1200px) {
+    .top-content .top-content1{
+        width: 45vw;
+        
+    }
+    
+}
+@media (max-width:1024px) {
+    .top-content .top-content2{
+        width: 70vw;
+       
+    
+        /* right: 0rem;
+        bottom: 3rem; */
+        margin: auto 2rem 2rem auto;
+        
+    }
+    .top-content .top-content1{
+        width: 45vw;
+    }
+    .top-content .top-content2 .text1{
+        font-size: 5rem;
+    }
+    .top-content .top-content2 .text2{
+        font-size: 6rem;
+    }
+    .top-content .top-content2 .text3{
+        font-size: 5rem;
+    }
+    .top-content .top-content2 .text4{
+        font-size: 1rem;
+    }
+    .top-content .top-content1 h1{
+        font-size: 11rem;
+    }
+}
+@media (max-width:768px) {
+    .top-content .top-content2{
+        width: 70vw;
+        margin: auto 1rem 1rem auto;
+        
+    }
+    /* .top-content .top-content1{
+        width: 45vw;
+    } */
+    .top-content .top-content2  img{
+        animation:none ;
+        width: 75vw;
+        transform: translateX(8rem) translateY(-2rem);
+    }
+
+    .top-content .top-content2 .text1{
+     animation: none;
+     top: 8rem;
+     left:2rem;
+     font-size: 3rem;
+    }
+    .top-content .top-content2 .text2{
+        animation: none ;
+        font-size: 4rem;
+        right: 1rem;
+        top: 3rem;
+    }
+    .top-content .top-content2 .text3{
+        animation: none ;
+        right: 1rem;
+        top: 12.5rem;
+        font-size: 3rem;
+    }
+    .top-content .top-content2 .text4{
+         animation: none;
+         right: 3rem;
+         font-weight: 300;
+    }
+    .top-content .top-content1 h1{
+        font-size: 9rem;
+    }
+    
+    .top-content .top-content3{
+        width: 60%;
+    }
+    .top-content .loading{
+       
+        width: 100vw;
+      
+    }
+    .top-content .top-content1 > p{
+        font-size: 1.3rem;
+    }
+    .top-content .top-content1 .know-more{
+        width: 23rem;
+        height: 5.4rem;
+    }
+}
+@media (max-width:650px){
+    .top-content .top-content2{
+        width: 80vw;
+        margin: auto 0 0 auto;
+    }
+    .top-content .top-content2  img{
+        animation:none ;
+        transform: translateX(5rem) translateY(-2rem);
+    }
+
+    .top-content .top-content2 .text1{
+     animation: none;
+     top: 9rem;
+     left:0rem;
+     font-size: 3rem;
+    }
+    .top-content .top-content2 .text2{
+        animation: none ;
+        font-size: 4rem;
+        right: 1rem;
+        top: 4rem;
+    }
+    .top-content .top-content2 .text3{
+        animation: none ;
+        right: 1rem;
+        top: 12.5rem;
+        font-size: 3rem;
+    }
+    .top-content .top-content2 .text4{
+         animation: none;
+         right: 3rem;
+         font-weight: 300;
+    }
+    .top-content .top-content3{
+        width: 65%;
+        height: 30%;
+    }
+    .top-content .loading{
+       height: 100%;
+        width: 100vw;
+      
+    }
+    .top-content .top-content1 .know-more{
+        width: 21rem;
+        height: 5.4rem;
+    }
+    .top-content .top-content3 p{
+        font-size: 1.2rem;
+        width: 28vw;
+    }
+}
+@media (max-width:426px){
+    
+.top-content{
+    display: flex;
+    flex-direction: column;
+   margin: auto;
+}
+.top-content .top-content1{
+    padding-top: 8rem;
+    padding-left: 1rem;
+    width: 100vw;
+}
+.top-content .top-content1 h1{
+    font-size: 8rem;
+    width: 100%;
+    overflow: hidden;
+}
+.top-content .top-content1 .know-more{
+    position: absolute;
+    bottom: +5rem;
+    right: 1rem;
+    width: 24.8rem;
+  
+}
+.top-content .top-content2{
+    width: 100vw;
+    height: 50vh;
+    margin: 1rem 0 0 auto;
+}
+.top-content .top-content2 h1{
+    display: none;
+}
+.top-content .top-content2 p{
+    display: none;
+}
+.top-content .top-content2  img{
+    z-index: 0;
+    width: 100%;/* ask*/
+    height: 70%;
+    padding-bottom: 0rem;
+}
+.top-content .top-content3{
+    bottom: 20rem;
+width: 70%;
+height: 20%;
+}
+.top-content .loading{
+    height: 100%;
+     width: 100vw;
+   display: flex;
+   flex-direction: column;
+ }
+.top-content .top-content3 p{
+    width: 60vw;
+    font-size: 1rem; 
+
+}
+.divider1{
+    display: block;
+    justify-content: center;
+   
+    height: .25rem;
+    margin: 0rem 5rem;
+    background-color: black;
+}
 }
