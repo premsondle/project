@@ -28,10 +28,9 @@ body {
   margin: auto;
   width: 100%;
 }
-@media (max-width: 900px) {
-  html {
-    font-size: 8.5px;
-  }
+
+.displayNone{
+  display: none;
 }
 @media (max-width: 900px) {
   html {

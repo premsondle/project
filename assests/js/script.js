@@ -5,10 +5,15 @@ let loadingfunc = () => {
 };
 
 function openMenu() {
-  document.getElementById("menu-container").style.zIndex = 20;
-  document.getElementById("menu-wrapper").style.zIndex = 10;
-  document.getElementById("menu-wrapper").classList.remove("not-active");
-  document.getElementById("menu-container").classList.remove("not-active");
+
+  document.getElementById("menu-wrapper").classList.remove("displayNone")
+  document.getElementById("menu-container").classList.remove("displayNone")
+  setTimeout(() => {
+    document.getElementById("menu-container").style.zIndex = 20;
+    document.getElementById("menu-wrapper").style.zIndex = 10;
+    document.getElementById("menu-wrapper").classList.remove("not-active");
+    document.getElementById("menu-container").classList.remove("not-active");
+  }, 1);
   setTimeout(() => {
     document.getElementById("inner-content").classList.remove("not-active");
   }, 300);
@@ -19,8 +24,6 @@ function openMenu() {
 }
 
 function closeMenu() {
-
-
   document.getElementById("menu-links").style.opacity = 0;
   document.getElementById("menu-links").style.transform = "translateY(4rem)";
 
@@ -30,12 +33,11 @@ function closeMenu() {
   }, 500);
 
   setTimeout(() => {
-    document.getElementById("menu-container").style.zIndex = 0;
-    document.getElementById("inner-content").classList.remove("not-active");
-
-  }, 600);
-  setTimeout(() => {
     document.getElementById("menu-wrapper").style.zIndex = 0;
     document.getElementById("inner-content").classList.add("not-active");
   }, 700);
+  setTimeout(() => {
+    document.getElementById("menu-wrapper").classList.add("displayNone")
+    document.getElementById("menu-container").classList.add("displayNone")
+  }, 1000);
 }
