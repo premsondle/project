@@ -254,9 +254,9 @@
     width: 100%;
     margin: 2rem;
     overflow: hidden;
-}
-.slide2 .slide2-main {
-      overflow: hidden;
+  }
+  .slide2 .slide2-main {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -276,4 +276,22 @@
   .slide2 .slide2-design .cards {
     padding-top: 10rem;
   }
+}
+
+@media (min-width: 1424px) {
+  .slide2 .slide2-main {
+    top: 16rem;
+    padding-left: 8rem;
+  }
+
+  .slide2 .slide2-design .cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
 }

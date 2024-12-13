@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravitas</title>
+  <link rel="stylesheet" href="./project/assests/css/style.css">
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow:scroll;
+    }
+
+    .navbar{
+    
+    padding: 0rem 0rem;
+    /* background-color: bisque; */
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    z-index: 20;
+    background-color: #fff;
+    
+}
+.navbar img{
+    width: 14rem;
+    height: 2rem;
+
+}
+.navbar-links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+    position: relative;
+   
+    width: 50%;
+}
+.navbar-links .navbar-linkss{
+    display: flex;
+    justify-content: center;
+    margin-right: 3rem;
+    gap: 1.8rem;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.navbar-links .navbar-linkss a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    font-family:"Roboto", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+.number{
+    position: absolute;
+    left:1.5rem;
+    bottom: 6rem;
+    transform: rotate(-90deg);
+    color: black;
+    font-size: 10.5rem;
+    font-family: "Sarpanch", sans-serif;
+    font-weight: 800;
+}
+.navbar-contact{
+    display: none;
+}
+.hamburgerblock .hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 4rem;
+    height: 3rem;
+    color: black;
+    position:relative;
+    gap: .6rem;
+    
+}
+.hamburgerblock .hamburger .line{
+    width: 2rem;
+    height: .25rem;
+    background-color: black;
+    border-radius: .6rem;
+}
+ #checkbox {
+    display: none;
+  }
+/*  #checkbox:checked + .hamburgerblock .hamburger{
+    .navbar-links .navbar-linkss{
+        display: none;
+      
+    }
+  }
+#checkbox:checked + .hamburgerblock .hamburger .top {     
+    transform: rotate(45deg) ;
+     top: 50%;
+  }
+  
+  #checkbox:checked + .hamburgerblock .hamburger .bottom {
+    transform: rotate(-45deg) ;
+    bottom: 50%;
+  } */
+
+@media (max-width:426px) {
+    .navbar{
+        width: 100%;
+    }
+.navbar-links .navbar-linkss{
+    display: none;
+} 
+.hamburgerblock .hamburger{
+    margin-right: .8rem;
+}
+.number{
+ display: none;
+}
+}
+@media (max-width:1024px){
+    .number{
+        font-size: 8.5rem;
+    }
+    .navbar{
+        width: 100%;
+    }
+}
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      width: 100%;
+      margin-top: 8rem;
+    }
+
+    .card {
+      border-radius: 10px;
+      padding: 20px;
+      color: #000000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card.front-end {
+  background-color: #59da84; /* Light green background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  grid-row-start: 0;
+  grid-row-end: 2;
+  flex-direction: column;
+}
+
+.card.front-end h2 {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.card.front-end .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card.front-end .tool {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card.front-end .tool img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #000000; /* White background for the icons */
+  padding: 5px;
+}
+
+.card.front-end .tool p {
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+    .real-time {
+      background-color: #1cc4aa;
+      grid-column: 1;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    .back-end {
+      background-color: #3ec7ea;
+      grid-column: 3;
+      grid-row: 1;
+    }
+
+    .algorithms {
+      background-color: #ed216c;
+      grid-column: 3;
+      grid-row: 2;
+    }
+
+    .contribute {
+      background-color: #8727a1;
+      grid-column: 2;
+      grid-row: span 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    footer {
+      background-color: #aaaaad;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      width: 99%;
+      padding-right: 0;
+    }
+
+    footer a {
+      margin: 0 0px;
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+          <img src="./project/assests/logo.png" alt="logo" />
+          <div class="navbar-links">
+            <nav class="navbar-linkss">
+              <li><a href="#">TeamGravitas</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Tech</a></li>
+            </nav>
+       
+  
+            <div class="navbar-contact">
+              <div class="navbar-contact1">
+                <img src="./assests/contact/instalogo.png" alt="insta" />
+              </div>
+              <div class="navbar-contact2">
+                <img src="./assests/contact/twitterlogo.png" alt="twitter" />
+              </div>
+              <div class="navbar-contact3">
+                <img src="./assests/contact/linkedin.png" alt="linkedin" />
+              </div>
+              <div class="navbar-contact4">
+                <img src="./assests/contact/messager.png" alt="messager" />
+              </div>
+            </div>
+            <div class="hamburgerblock">
+              <input type="checkbox" name="check" id="checkbox" />
+              <label  for="checkbox"  class="hamburger">
+                <div class="line top"></div>
+                <div class="line bottom"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </header>
+
+  <div class="container">
+    <div class="card front-end">
+        <h2>Front End</h2>
+        <div class="content">
+          <div class="tool">
+            <p><strong>Figma</strong>: Design the software in Figma.</p>
+          </div>
+          <div class="tool">
+            <p><strong>React</strong>: Software for Web, Android, and iOS.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card real-time">
+  <h2>Real-Time</h2>
+  <div class="content">
+    <div class="tool">
+      <p><strong>Socket.IO</strong>: Enables real-time communication across Web, Android, and iOS.</p>
+    </div>
+  </div>
+</div>
+
+    <div class="card back-end">
+      <h2>Back End</h2>
+      <p><strong>NodeJS</strong>: Creating the backend using Node.js.</p>
+      <p><strong>Express.JS</strong>: Server routing with Express.js.</p>
+      <p><strong>MongoDB</strong>: Database modeling in Mongoose.</p>
+    </div>
+    <div class="card algorithms">
+      <h2>Algorithms & APIs</h2>
+      <p><strong>NodeJS</strong>: Backend machine learning models.</p>
+      <p><strong>Google Maps API</strong>: Event discovery using location data.</p>
+    </div>
+    <div class="card contribute">
+      <h2>Contribute in the Above Field</h2>
+      <p>
+        Step into the future of event management. Simplify collaboration,
+        amplify discoverability, and foster meaningful connections with
+        modern tools that inspire creativity.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+      <div class="Copyright">
+        <p>Copyright2014 Gravitas. All rights reserved</p>
+        <a href="#Terms">Terms of Service Privacy</a>
+      </div>
+
+    
+    <div class="footer-contact">
+        <img src="./project/assests/contact/instalogo.png" alt="insta" />
+        <img src="./project/assests/contact/twitterlogo.png" alt="twitter" />
+      
+        <img src="./project/assests/contact/linkedin.png" alt="linkedin" />
+      
+        <img src="./project/assests/contact/messager.png" alt="messager" />
+      </div>
+    </div>
+    </footer>
+
+    <script src="./assests/js/script.js"></script>
+</body>
+</html>

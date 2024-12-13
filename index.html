@@ -34,8 +34,7 @@
             </div>
           </div>
           <div class="hamburgerblock">
-            <input type="checkbox" name="check" id="checkbox" />
-            <label  for="checkbox"  class="hamburger">
+            <label onclick="openMenu()" for="checkbox"  class="hamburger">
               <div class="line top"></div>
               <div class="line bottom"></div>
             </label>
@@ -43,6 +42,23 @@
         </div>
       </div>
     </header>
+    <section>
+      <div onclick="closeMenu()" id="menu-wrapper" class="menu-wrapper not-active displayNone"></div>
+      <div id="menu-container" class="menu-container not-active displayNone">
+        <div id="inner-content" class="inner-content not-active ">
+
+          <div id="menu-links" class="menu-links">
+            <a href="#">Team Gravitas</a>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Tech</a>
+          </div>
+          <div class="social-links">
+  
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="number">100</div>
     <section class="top-content">
       <div class="top-content1">
