@@ -509,4 +509,8 @@
         width: 100vw;
         height: 100vh;
       }
+      .part-1 .content-wrapper h2{
+        font-weight: 800;
+        font-size: 2.5rem;
+    }
   }
