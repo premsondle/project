@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <img src="./assests/logo.png" alt="logo" />
+        <div class="navbar-links">
+          <nav class="navbar-linkss">
+            <li><a href="./index.html">home</a></li>
+            <li><a href="./features.html">features</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./tech.html">Tech</a></li>
+          </nav>
+
+
+          <div class="hamburgerblock">
+            <label onclick="openMenu()" for="checkbox" class="hamburger">
+              <div class="line top"></div>
+              <div class="line bottom"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="menu-section">
+      <div
+        onclick="closeMenu()"
+        id="menu-wrapper"
+        class="menu-wrapper not-active displayNone"
+      ></div>
+      <div id="menu-container" class="menu-container not-active displayNone">
+        <div class="cross" onclick="closeMenu()" >
+          <div class="cross-one"></div>
+          <div class="cross-two"></div>
+        </div>
+        <div id="inner-content" class="inner-content not-active">
+          <div id="menu-links" class="menu-links">
+            <a href="./index.html">home</a>
+            <a href="./features.html">features</a>
+            <a href="./about.html">About</a>
+            <a href="./tech.html">Tech</a>
+          </div>
+          <div class="social-links">
+            <div id="navbar-contact" class="navbar-contact">
+              <div class="navbar-contact1">
+                <img src="./assests/contact/instalogo.png" alt="insta" />
+              </div>
+              <div class="navbar-contact2">
+                <img src="./assests/contact/twitterlogo.png" alt="twitter" />
+              </div>
+              <div class="navbar-contact3">
+                <img src="./assests/contact/linkedin.png" alt="linkedin" />
+              </div>
+              <div class="navbar-contact4">
+                <img src="./assests/contact/messager.png" alt="messager" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section class="contact-container">
+        <div class="contact-details">
+          <h1>Contact us</h1>
+          <p>We're excited to hear from you and connect</p>
+          <div class="inquiries">
+            <h3>Inquires:</h3>
+            <p>gravitas@gmail.com</p>
+          </div>
+          <div class="team-contacts">
+            <p>owner - 8889954578</p>
+            <p>manager - 8305676978</p>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h2>Get In Touch</h2>
+          <p>You can reach us anytime</p>
+          <form id="contactForm">
+            <div class="form-row">
+              <input
+                type="text"
+                id="firstName"
+                placeholder="First name"
+                required
+              />
+              <input
+                type="text"
+                id="lastName"
+                placeholder="Last name"
+                required
+              />
+            </div>
+            <input type="email" id="email" placeholder="Your Email" required />
+            <div class="form-row">
+              <select id="countryCode">
+                <option value="+91">+91</option>
+              </select>
+              <input
+                type="tel"
+                id="phoneNumber"
+                placeholder="Phone number"
+                required
+              />
+            </div>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="How can we help?"
+              required
+            ></textarea>
+            <div class="button"><button type="submit">Submit</button></div>
+          </form>
+
+          <div
+            id="responseMessage"
+            style="
+              display: none;
+              margin-top: 20px;
+              padding: 10px;
+              background-color: #e0ffe0;
+              border: 1px solid #a0d0a0;
+              color: #4a7c4a;
+              font-weight: bold;
+            "
+          ></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img
+        class="footerlogo"
+        src="./assests/footer/footerrgravitas.png"
+        alt="logo"
+      />
+      <div class="footer-contact">
+        <div class="footer-socialmedia">
+          <img
+            src="./assests/footer/footerinsta2.png"
+            class="foot"
+            alt="insta"
+          />
+          <img src="./assests/footer/footertwi.png" alt="twitter" />
+          <img src="./assests/footer/footerVector.png" alt="linkedin" />
+          <img src="./assests/footer/footermessage.png" alt="messager" />
+        </div>
+        <div class="footer-info">
+          <a href="./contact.html">CONATCTS</a>
+          <a href="./about.html">ABOUT</a>
+          <a href="./tech.html">TECH STACK</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./assests/js/script.js"></script>
+  </body>
+</html>

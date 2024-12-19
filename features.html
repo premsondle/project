@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <link rel="stylesheet" href="./assests/css/features.css" />
+    <title>Features</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <img src="./assests/logo.png" alt="logo" />
+        <div class="navbar-links">
+          <nav class="navbar-linkss">
+            <li><a href="./index.html">home</a></li>
+            <li><a href="./contact.html">contact</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./tech.html">Tech</a></li>
+          </nav>
+
+          <div class="hamburgerblock">
+            <label onclick="openMenu()" for="checkbox" class="hamburger">
+              <div class="line top"></div>
+              <div class="line bottom"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="menu-section">
+      <div
+        onclick="closeMenu()"
+        id="menu-wrapper"
+        class="menu-wrapper not-active displayNone"
+      ></div>
+      <div id="menu-container" class="menu-container not-active displayNone">
+        <div class="cross" onclick="closeMenu()" >
+          <div class="cross-one"></div>
+          <div class="cross-two"></div>
+        </div>
+        <div id="inner-content" class="inner-content not-active">
+          <div id="menu-links" class="menu-links">
+            <a href="./index.html">home</a>
+            <a href="./features.html">features</a>
+            <a href="./about.html">About</a>
+            <a href="./tech.html">Tech</a>
+          </div>
+          <div class="social-links">
+            <div id="navbar-contact" class="navbar-contact">
+              <div class="navbar-contact1">
+                <img src="./assests/contact/instalogo.png" alt="insta" />
+              </div>
+              <div class="navbar-contact2">
+                <img src="./assests/contact/twitterlogo.png" alt="twitter" />
+              </div>
+              <div class="navbar-contact3">
+                <img src="./assests/contact/linkedin.png" alt="linkedin" />
+              </div>
+              <div class="navbar-contact4">
+                <img src="./assests/contact/messager.png" alt="messager" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="main">
+      <section id="page-i" class="page-1">
+        <div class="background-box">
+          <div class="vertical-design-box">
+            <div class="vertical-line"></div>
+            <div class="vertical-line"></div>
+            <div class="vertical-line"></div>
+            <div class="vertical-line"></div>
+            <div class="vertical-line"></div>
+          </div>
+          <div class="bg-img-box"></div>
+        </div>
+        <div class="content-page1">
+          <div>
+            <h1>Revolutionizing Event Management</h1>
+            <hr />
+            <p>
+              Welcome to <b>GRAVITAS!</b> <br />An all-in-one solution for
+              communities,<br />
+              volunteers, and event organizers.
+            </p>
+            <a href="#page-3">
+              <button>
+                features
+                <div>
+                  <svg
+                    width="35"
+                    height="13"
+                    viewBox="0 0 35 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.992188 5.7C0.55036 5.7 0.192187 6.05817 0.192187 6.5C0.192187 6.94183 0.55036 7.3 0.992188 7.3V5.7ZM34.573 7.06569C34.8854 6.75327 34.8854 6.24673 34.573 5.93431L29.4819 0.843146C29.1694 0.530726 28.6629 0.530726 28.3505 0.843146C28.0381 1.15557 28.0381 1.6621 28.3505 1.97452L32.876 6.5L28.3505 11.0255C28.0381 11.3379 28.0381 11.8444 28.3505 12.1569C28.6629 12.4693 29.1694 12.4693 29.4819 12.1569L34.573 7.06569ZM0.992188 7.3H34.0073V5.7H0.992188V7.3Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="page-2">
+        <div class="page-2-content">
+          <h1>What Makes Us Unique?</h1>
+          <p>
+            Our platform is built to make event management seamless,
+            volunteering effortless, and event updates accessible to everyone.
+          </p>
+        </div>
+        <div class="page-2-image">
+          <img src="./assests/features/Group 82.png" alt="" />
+        </div>
+      </section>
+      <section id="page-3">
+        <div class="page-3-heading">
+          <h1>Key Features</h1>
+          <hr />
+        </div>
+        <div class="features-container">
+          <div class="feature-box">
+            <div class="cover"></div>
+            <div class="content-wrapper">
+              <h1>Volunteer Management</h1>
+              <p>
+                Effortlessly manage volunteers with one-click applications. Save
+                time and resources by letting users apply to multiple roles
+                instantly and find the right match for your events.
+              </p>
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="cover"></div>
+            <div class="content-wrapper">
+              <h1>Event Updates</h1>
+              <p>
+                Stay connected with your community. Share real-time updates,
+                announcements, and event changes through our notification
+                system.
+              </p>
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="cover"></div>
+            <div class="content-wrapper">
+              <h1>Community Dashboard</h1>
+              <p>
+                Empower your team with a comprehensive dashboard. Create, edit,
+                and track events, volunteer registrations, and participation
+                metrics with ease
+              </p>
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="cover"></div>
+            <div class="content-wrapper">
+              <h1>Discover Events</h1>
+              <p>
+                Explore events by categories, locations, and dates. Personalized
+                recommendations help users find events they love.
+              </p>
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="cover"></div>
+            <div class="content-wrapper">
+              <h1>User Profiles</h1>
+              <p>
+                Volunteers can maintain detailed profiles, showcasing their
+                skills, interests, and experiences, making it easier to find
+                suitable opportunities.
+              </p>
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="cover"></div>
+            <div class="content-wrapper">
+              <h1>Insights and Analytics</h1>
+              <p>
+                Access in-depth analytics about volunteer engagement and event
+                success to make data-driven decisions for future planning.
+              </p>
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="cover"></div>
+            <div class="content-wrapper">
+              <h1>Communication Made Easy</h1>
+              <p>
+                Engage with volunteers directly through in-app messaging or
+                discussion forums. Simplify collaboration and coordination for
+                your events.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="page-4">
+        <h1>How It Works</h1>
+        <div class="part-1">
+          <div class="content-wrapper">
+            <h2>For Communities</h2>
+            <hr />
+            <ul>
+              <li>Create an account and set up your community.</li>
+              <li>Post events and requirements.</li>
+              <li>Shortlist volunteers effortlessly.</li>
+              <li>Provide updates and receive feedback.</li>
+            </ul>
+          </div>
+          <div class="content-wrapper">
+            <h2>For Users</h2>
+            <hr />
+            <ul>
+              <li>Sign up and build your profile.</li>
+              <li>Apply for roles with a single click..</li>
+              <li>Discover exciting events tailored to your interests.</li>
+              <li>Stay updated on the latest event developments.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="part-2">
+          <div class="part-2-wrapper">
+            <h2>Join Us Today!</h2>
+            <hr />
+            <p>
+              Be part of a platform that’s reshaping how events are managed and
+              experienced. [Sign Up Now] and make your next event unforgettable!
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer>
+      <img
+        class="footerlogo"
+        src="./assests/footer/footerrgravitas.png"
+        alt="logo"
+      />
+      <div class="footer-contact">
+        <div class="footer-socialmedia">
+          <img
+            src="./assests/footer/footerinsta2.png"
+            class="foot"
+            alt="insta"
+          />
+          <img src="./assests/footer/footertwi.png" alt="twitter" />
+          <img src="./assests/footer/footerVector.png" alt="linkedin" />
+          <img src="./assests/footer/footermessage.png" alt="messager" />
+        </div>
+        <div class="footer-info">
+          <a href="./contact.html">CONATCTS</a>
+          <a href="./about.html">ABOUT</a>
+          <a href="./tech.html">TECH STACK</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./assests/js/script.js"></script>
+     
+  </body>
+</html>

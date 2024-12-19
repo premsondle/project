@@ -17,6 +17,32 @@
   border-radius: 50%;
   background-color: #ffffffe8;
 }
+.cross{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+.cross .cross-one{
+  width: 2rem;
+  height: 0.25rem;
+  background-color: black;
+  border-radius: 1rem;
+  transform: rotate(-45deg) translateY(.1rem) ;
+}
+.cross .cross-two{
+  border-radius: 1rem;
+  width: 2rem;
+  height: 0.25rem;
+  transform: rotate(45deg) translateY(-.1rem) ;
+  background-color: black;
+}
 .menu-wrapper {
   backdrop-filter: blur(0.4rem);
   position: fixed;

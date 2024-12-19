@@ -73,7 +73,7 @@
 }
 .slide2 .slide2-design .rowdesign .design {
   display: block;
-  background: rgb(226, 226, 226);
+  background: rgb(90, 90, 90);
   width: 1.7rem;
 }
 .slide2 .slide2-design .cards {
@@ -236,7 +236,7 @@
     width: 80%;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 540px) {
   .slide2 {
     /* display: flex;
         position: relative; */

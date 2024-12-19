@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assests/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="navbar-logo">
+        <img src="./assests/logo.png" alt="logo" />
+      </div>
+      <div class="navbar-links">
+        <nav class="navbar-linkss">
+         <li> <a href="./index.html">home</a></li>
+          <li><a href="./contact.html">contact</a></li>
+          <li><a href="./tech.html">tech</a></li>
+          <li><a href="./features.html">Features</a></li>
+        </nav>
+   
+
+ 
+        <div class="hamburgerblock">
+          <label onclick="openMenu()" for="checkbox"  class="hamburger">
+            <div class="line top"></div>
+            <div class="line bottom"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div onclick="closeMenu()" id="menu-wrapper" class="menu-wrapper not-active displayNone"></div>
+    <div id="menu-container" class="menu-container not-active displayNone">
+      <div class="cross" onclick="closeMenu()" >
+        <div class="cross-one"></div>
+        <div class="cross-two"></div>
+      </div>
+      <div id="inner-content" class="inner-content not-active ">
+
+        <div id="menu-links" class="menu-links">
+          <a href="./index.html">home</a>
+
+          <a href="./contact.html">contact</a>
+          <a href="./tech.html">tech</a>
+          <a href="./features.html">Features</a>
+        </div>
+        <div class="social-links">
+          <div id="navbar-contact" class="navbar-contact">
+            <div class="navbar-contact1">
+              <img src="./assests/contact/instalogo.png" alt="insta" />
+            </div>
+            <div class="navbar-contact2">
+              <img src="./assests/contact/twitterlogo.png" alt="twitter" />
+            </div>
+            <div class="navbar-contact3">
+              <img src="./assests/contact/linkedin.png" alt="linkedin" />
+            </div>
+            <div class="navbar-contact4">
+              <img src="./assests/contact/messager.png" alt="messager" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section id="about" class="about-section">
+        <div class="container">
+          <h2 class="section-title">About the Event</h2>
+          <p class="event-description">
+            Welcome to Gravitas, the ultimate gathering of enthusiasts, professionals, and learners 
+            dedicated to [event theme, e.g., "exploring technology and creativity"]. This event is designed to bring 
+            together like-minded individuals to share knowledge, network, and celebrate innovation.
+          </p>
+          <div class="about-details">
+            <div class="about-item">
+              <h3>Event Highlights</h3>
+              <ul>
+                <li>Interactive workshops led by industry experts</li>
+                <li>Keynote sessions by renowned speakers</li>
+                <li>Networking opportunities with peers and professionals</li>
+                <li>Exciting competitions and prizes</li>
+              </ul>
+            </div>
+            <div class="about-item">
+              <h3>Why Attend?</h3>
+              <p>
+                Whether you're a seasoned professional or just starting out, this event offers something for everyone. 
+                Gain insights, showcase your skills, and connect with the community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer style="padding: 3rem 2rem 5rem 2rem;">
+        
+        <img  class="footerlogo" src="./assests/footer/footerrgravitas.png" alt="logo" />
+        <div class="footer-contact">
+          <div class="footer-socialmedia">
+            <img src="./assests/footer/footerinsta2.png" class="foot" alt="insta" />
+            <img src="./assests/footer/footertwi.png"  alt="twitter" />
+            <img src="./assests/footer/footerVector.png" alt="linkedin" />
+            <img src="./assests/footer/footermessage.png" alt="messager" />
+          </div>
+          <div class="footer-info">
+            <a href="#">CONATCTS</a>
+            <a href="#">ABOUT</a>
+            <a href="#">TECH STACK</a>
+          </div>
+          </div>
+        </div>
+        </div>
+      </footer> 
+      <script src="./assests/js/script.js"></script>
+      
+</body>
+</html>

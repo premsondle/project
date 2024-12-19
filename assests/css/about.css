@@ -1,0 +1,84 @@
+
+/* body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff;
+  
+  } */
+  
+  /* About Section */
+  .about-section {
+    margin-top: 8rem;
+    padding: 80px 20px;
+    background-color: #f9f9f944;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    color: #1f1f1f;
+  }
+  
+  .event-description {
+    text-align: center;
+    font-size: 2rem;
+    color: #050505b7;
+    margin-bottom: 40px;
+    line-height: 1.8;
+  }
+  
+  .about-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .about-item {
+    flex: 1 1 45%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #dbd6d6;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-item h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #090606;
+    text-align: center;
+  }
+  
+  .about-item ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .about-item p,
+  .about-item li {
+    font-size: 1.8rem;
+    color: #282525;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-details {
+      flex-direction: column;
+    }
+  
+    .about-item {
+      flex: 1 1 100%;
+    }
+  }
+  

@@ -1,6 +1,6 @@
 let loadingfunc = () => {
   setTimeout(() => {
-    document.getElementById("top-content3").classList.remove("loading");
+    document.getElementById("top-conpart2").classList.remove("loading");
   }, 1000);
 };
 
@@ -8,6 +8,7 @@ function openMenu() {
 
   document.getElementById("menu-wrapper").classList.remove("displayNone")
   document.getElementById("menu-container").classList.remove("displayNone")
+  document.getElementById("navbar-contact").classList.remove("displayNone")
   setTimeout(() => {
     document.getElementById("menu-container").style.zIndex = 20;
     document.getElementById("menu-wrapper").style.zIndex = 10;
@@ -39,5 +40,6 @@ function closeMenu() {
   setTimeout(() => {
     document.getElementById("menu-wrapper").classList.add("displayNone")
     document.getElementById("menu-container").classList.add("displayNone")
+    document.getElementById("navbar-contact").classList.add("displayNone")
   }, 1000);
 }

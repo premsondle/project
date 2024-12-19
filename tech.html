@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assests/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="navbar-logo">
+        <img src="./assests/logo.png" alt="logo" />
+      </div>
+      <div class="navbar-links">
+        <nav class="navbar-linkss">
+         <li> <a href="./index.html">home</a></li>
+          <li><a href="./contact.html">contact</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./features.html">Features</a></li>
+        </nav>
+   
+
+ 
+        <div class="hamburgerblock">
+          <label onclick="openMenu()" for="checkbox"  class="hamburger">
+            <div class="line top"></div>
+            <div class="line bottom"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div onclick="closeMenu()" id="menu-wrapper" class="menu-wrapper not-active displayNone"></div>
+    <div id="menu-container" class="menu-container not-active displayNone">
+      <div class="cross" onclick="closeMenu()" >
+        <div class="cross-one"></div>
+        <div class="cross-two"></div>
+      </div>
+      <div id="inner-content" class="inner-content not-active ">
+
+        <div id="menu-links" class="menu-links">
+          <a href="./index.html">home</a>
+
+          <a href="./contact.html">contact</a>
+          <a href="about.html">About</a>
+          <a href="./features.html">Features</a>
+        </div>
+        <div class="social-links">
+          <div id="navbar-contact" class="navbar-contact">
+            <div class="navbar-contact1">
+              <img src="./assests/contact/instalogo.png" alt="insta" />
+            </div>
+            <div class="navbar-contact2">
+              <img src="./assests/contact/twitterlogo.png" alt="twitter" />
+            </div>
+            <div class="navbar-contact3">
+              <img src="./assests/contact/linkedin.png" alt="linkedin" />
+            </div>
+            <div class="navbar-contact4">
+              <img src="./assests/contact/messager.png" alt="messager" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="tech-page">
+         <div class="tech-content1">
+          <div class="tech-frontened">
+            <h1 class="headtext">frontend</h1>
+               <div class="frontened">
+                <img  class="image" src="./assests/techimage/figma.png" alt="figma">
+                <div class="frontened-contain">
+                  <h2 class="headtext2">figma</h2>
+                  <p class="pera">design the software in figma</p>
+                </div>
+                  
+               </div>
+               <div class="frontened">
+                <img  class="image" src="./assests/techimage/react.png" alt="react">
+                <div class="frontened-contain">
+                  <h2 class="headtext2">react</h2>
+                  <p class="pera">software web , android and ios based</p>
+                </div>
+               </div>
+          </div>
+          <div class="tech-realtime">
+            <h1 class="headtext">real-time</h1>
+              <div class="realtime">
+                <img class="image" src="./assests/techimage/socket.png" alt="socket">
+                <div class="realtime-contain">
+                 <h2 class="headtext2">socket.io</h2>
+                  <p class="pera">software web , android and ios based</p>
+                </div>
+              </div>
+          </div>
+          <div class="tech-backend">
+            <h1 class="headtext">backend</h1>
+                <div class="backend">
+                    <img  class="image" src="./assests/techimage/node1.png" alt="node">
+                    <div class="backend-contain">
+                      <h2 class="headtext2">node.js</h2>
+                      <p class="pera">creating backened using node.js</p>
+                    </div>
+                </div>
+                <div class="backend">
+                    <img  class="image" src="./assests/techimage/express.png" alt="express">
+                    <div class="backend-contain">
+                      <h2 class="headtext2">express.js</h2>
+                      <p class="pera">creating server using express js for routing</p>
+                    </div>
+                </div>
+                <div class="backend">
+                    <img  class="image" src="./assests/techimage/mongo.png" alt="mongo">
+                    <div class="backend-contain">
+                      <h2 class="headtext2">mongo db</h2>
+                      <p class="pera">model of database in mangoose</p>
+                    </div>
+                </div>
+          </div>
+          <div class="tech-algorithems">
+            <h1 class="headtext">algorithems and apis</h1>
+            <div class="algorithems">
+                <img  class="image" src="./assests/techimage/blank.png" alt="backend">
+                <div class="algorithems-contain">
+                  <h2 class="headtext2">creating backend using node js.</h2>
+                  <p class="pera">creating a machine learning model for suuggestions volenteer and pro</p>
+                </div>
+            </div>
+            <div class="algorithems">
+              <img class="map"  class="image" src="./assests/techimage/map1.png" alt="map">
+              <div class="algorithems-contain">
+                <h2 class="headtext2">map , location apis</h2>
+                <p class="pera">google maps api for finding location wise event</p>
+              </div>
+            </div>
+        </div>
+          <div class="tech-contibute">
+            <h1  class="headtext">contibute in the above field</h1>
+             <div class="contibute">
+                <p class="pera">creating a machine learning model for suuggestions volenteer and pro</p>
+             </div>
+          </div>
+        </div>
+        <div class="tech-content2">
+            <h1>contribute in the above field</h1>
+            <p class="pera">Step into the future of event management with a platform designed to simplify collaboration, amplify discoverability, and foster meaningful connections. Whether you're planning a grand conference, an intimate gathering, or a dynamic networking event, our tools ensure every detail is seamless and every opportunity is maximized. From connecting with the right people to showcasing your event to a broader audience, we empower you to create experiences that inspire and engage.</p>
+        </div>
+    </section>
+
+
+
+      <footer style="padding: 3rem 2rem 5rem 2rem;">
+        
+        <img  class="footerlogo" src="./assests/footer/footerrgravitas.png" alt="logo" />
+        <div class="footer-contact">
+          <div class="footer-socialmedia">
+            <img src="./assests/footer/footerinsta2.png" class="foot" alt="insta" />
+            <img src="./assests/footer/footertwi.png"  alt="twitter" />
+            <img src="./assests/footer/footerVector.png" alt="linkedin" />
+            <img src="./assests/footer/footermessage.png" alt="messager" />
+          </div>
+          <div class="footer-info">
+            <a href="./contact.html">CONATCTS</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./tech.html">TECH STACK</a>
+          </div>
+          </div>
+        </div>
+        </div>
+      </footer> 
+      <script src="./assests/js/script.js"></script>
+      
+</body>
+</html>
