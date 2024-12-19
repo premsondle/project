@@ -36,7 +36,7 @@
     background-color: #e9e9e9;
   }
   .bg-img-box {
-    background-image: url(/assests/features/revolution.jpg);
+    background-image: url(assests/features/revolution.jpg);
     height: 32vw;
     border-radius: 5rem 0 0 5rem;
     width: 50vw;
@@ -190,7 +190,7 @@
     position: relative;
     overflow: hidden;
     transition: 0.8s;
-    background-image: url(/assests/features/black.jpg);
+    background-image: url(assests/features/black.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   background-blend-mode:difference  ;
