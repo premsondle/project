@@ -414,9 +414,14 @@
     width: 100vw;
   }
   .top-content .top-content1 h1 {
-    font-size: 8rem;
+    font-size: 6rem;
     width: 100%;
     overflow: hidden;
+  }
+  .top-content .top-content1 > p {
+    width: 90%;
+    padding-bottom: 0px;
+    font-size: 1.3rem;
   }
   .top-content .top-content1 .know-more {
     position: absolute;
