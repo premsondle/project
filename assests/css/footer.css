@@ -1,6 +1,6 @@
 footer{
     background-color: black;
-    display: flex;
+    display: none;
     justify-content: space-between;
     padding: 30rem 2rem 5rem 2rem;
 }

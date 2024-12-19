@@ -356,7 +356,7 @@
   .top-content .top-content2 img {
     z-index: 0;
     width: 100%; /* ask*/
-    height: 70%;
+    height: 100%;
     padding-bottom: 0rem;
   }
   .top-content .top-content3 {
